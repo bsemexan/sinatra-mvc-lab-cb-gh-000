@@ -1,5 +1,5 @@
 class PigLatinizer
-  def piglatinize(word)
+  def piglatinize_word(word)
     vowels = ['a','e','i','o','u']
     consonants = ("a".."z").to_a.delete_if{|l| vowels.include?(l)}
     if vowels.include?(word[0].downcase)
